@@ -1,4 +1,7 @@
 ---
+import './styles/global.css';
+const PageTitle = "Página de inicio";
+import Navigation from './components/navigation.astro';
 ---
 
 <html lang="en">
@@ -8,16 +11,12 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{PageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a><br>
-		<a href="/about/">Sobre mi</a><br>
-		<a href="/blog/">Blog</a>
+		<Navigation />
 
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto itaque quis libero accusantium minus, quisquam ratione tempore consectetur harum ullam vel tempora quibusdam aliquid fugiat. Placeat quas autem qui eveniet!</p>
 		
-		<h1>Cambios desde entorno de desarrolo local</h1>
-		<h2>Prueba exitosa</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet ab voluptatum iure placeat modi nisi facilis vel nesciunt nobis quisquam earum maiores, sint voluptate accusantium, impedit perferendis libero molestiae.</p>
 	</body>
 </html>
